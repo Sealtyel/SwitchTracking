@@ -33,10 +33,10 @@ namespace SwitchTracking
         public static void spSwitchProcess()
         {
             switches=new List<Switch>();
-            SqlConnection conexion = new SqlConnection("Data Source=MEXCASTILS\\SQLEXPRESS;Initial Catalog=Switch;Integrated Security=True");
+            SqlConnection conexion = new SqlConnection("Data Source=MEXCASTILS\\SQLEXPRESS;Initial Catalog=SwitchDB;Integrated Security=True");
             conexion.Open();
             SqlDataReader myReader = null;
-            SqlCommand myCommand = new SqlCommand("select top 1 idSwitch,ip from Switch", conexion);
+            SqlCommand myCommand = new SqlCommand("select idSwitch,ip from Switch", conexion);
             myReader = myCommand.ExecuteReader();
         
             while (myReader.Read())
@@ -124,12 +124,12 @@ namespace SwitchTracking
                         {
                             continue;
                         }
-                        if ((puerto.Contains("Gi5/")) || (puerto.Contains("Gi6/")))//supervisores
+                        /*if ((puerto.Contains("Gi5/")) || (puerto.Contains("Gi6/")))//supervisores
                         {
 
                             continue;
 
-                        }
+                        }*/
                         nombre = sDataProccesed[1].Trim();
                         status = sDataProccesed[2].Trim();
                         vlan = sDataProccesed[3].Trim();
@@ -156,7 +156,7 @@ namespace SwitchTracking
                         {
                             string query = "";
                             using(SqlConnection sqlConnection1 =
-                            new SqlConnection("Data Source=MEXCASTILS\\SQLEXPRESS;Initial Catalog=Switch;Integrated Security=True"))
+                            new SqlConnection("Data Source=MEXCASTILS\\SQLEXPRESS;Initial Catalog=SwitchDB;Integrated Security=True"))
                             { 
                             SqlCommand cmd = new SqlCommand();
                             cmd.CommandType = CommandType.Text;
