@@ -1,0 +1,9 @@
+c:\users\castils\documents\visual studio 2013\Projects\SwitchTracking\SwitchTracking\bin\Debug\SwitchTracking.exe.config
+c:\users\castils\documents\visual studio 2013\Projects\SwitchTracking\SwitchTracking\obj\Debug\SwitchTracking.csprojResolveAssemblyReference.cache
+c:\users\castils\documents\visual studio 2013\Projects\SwitchTracking\SwitchTracking\obj\Debug\SwitchTracking.Properties.Resources.resources
+c:\users\castils\documents\visual studio 2013\Projects\SwitchTracking\SwitchTracking\obj\Debug\SwitchTracking.csproj.GenerateResource.Cache
+c:\users\castils\documents\visual studio 2013\Projects\SwitchTracking\SwitchTracking\bin\Debug\SwitchTracking.exe
+c:\users\castils\documents\visual studio 2013\Projects\SwitchTracking\SwitchTracking\bin\Debug\SwitchTracking.pdb
+c:\users\castils\documents\visual studio 2013\Projects\SwitchTracking\SwitchTracking\obj\Debug\SwitchTracking.exe
+c:\users\castils\documents\visual studio 2013\Projects\SwitchTracking\SwitchTracking\obj\Debug\SwitchTracking.pdb
+c:\users\castils\documents\visual studio 2013\Projects\SwitchTracking\SwitchTracking\obj\Debug\SwitchTracking.Form1.resources
