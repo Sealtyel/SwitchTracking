@@ -396,7 +396,7 @@ namespace SwitchTracking {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class IDFDataTable : global::System.Data.TypedTableBase<IDFRow> {
+        public partial class IDFDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
             
             private global::System.Data.DataColumn columnidIDF;
             
@@ -514,6 +514,12 @@ namespace SwitchTracking {
             public IDFRow FindByidIDF(int idIDF) {
                 return ((IDFRow)(this.Rows.Find(new object[] {
                             idIDF})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public virtual global::System.Collections.IEnumerator GetEnumerator() {
+                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -688,7 +694,7 @@ namespace SwitchTracking {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class PuertoDataTable : global::System.Data.TypedTableBase<PuertoRow> {
+        public partial class PuertoDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
             
             private global::System.Data.DataColumn columnidPuerto;
             
@@ -820,6 +826,12 @@ namespace SwitchTracking {
             public PuertoRow FindByidPuerto(int idPuerto) {
                 return ((PuertoRow)(this.Rows.Find(new object[] {
                             idPuerto})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public virtual global::System.Collections.IEnumerator GetEnumerator() {
+                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -996,7 +1008,7 @@ namespace SwitchTracking {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class SwitchDataTable : global::System.Data.TypedTableBase<SwitchRow> {
+        public partial class SwitchDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
             
             private global::System.Data.DataColumn columnidSwitch;
             
@@ -1128,6 +1140,12 @@ namespace SwitchTracking {
             public SwitchRow FindByidSwitch(int idSwitch) {
                 return ((SwitchRow)(this.Rows.Find(new object[] {
                             idSwitch})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public virtual global::System.Collections.IEnumerator GetEnumerator() {
+                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1305,7 +1323,7 @@ namespace SwitchTracking {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class TrackingDataTable : global::System.Data.TypedTableBase<TrackingRow> {
+        public partial class TrackingDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
             
             private global::System.Data.DataColumn columnidTracking;
             
@@ -1489,6 +1507,12 @@ namespace SwitchTracking {
             public TrackingRow FindByidTracking(int idTracking) {
                 return ((TrackingRow)(this.Rows.Find(new object[] {
                             idTracking})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public virtual global::System.Collections.IEnumerator GetEnumerator() {
+                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
